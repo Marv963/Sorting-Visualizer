@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.ParentAlgBut {
+  margin: 0;
+  background-color: #001f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ParentAlgBut a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.2vh;
+  padding: 1.5vh;
+  font-family: "Georgia", sans-serif;
+}
+
+.ParentAlgBut a:hover {
+  background-color: #7fdbff;
+  color: black;
+}
+
+.ParentAlgBut a.active {
+  color: #0074d9;
+}
+
+#Frame {
+  position: fixed;
+  left: 2vw;
+  top: 6vh;
+  width: 96vw;
+  margin: 0;
+  height: 80vh;
+  border: 1px solid black;
+}
+
+.ParentTopBar {
+  display: flex;
+  align-items: center;
+}
+
+.TopBar {
+  position: relative;
+  float: left;
+  top: 1.5vh;
+  font-size: 1.3vw;
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  left: 3vw;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.TopBar.Bracket {
+  font-size: 2vw;
+  margin: 0;
+  margin-bottom: 0.2vw;
+}
+
+.TopBar.Range {
+  margin-top: 0.7vh;
+  width: 10vw;
+}
+
+#StartButton {
+  padding: 0;
+  font-family: "Georgia", sans-serif;
+  background-color: #7fdbff;
+  color: black;
+  width: 4.2vw;
+}
+
+.bar {
+  position: absolute;
+  display: inline-block;
+  background-color: #7fdbff;
+}
+
+.barValue {
+  position: absolute;
+  top: 87vh;
+  color: #7fdbff;
+  font-family: Arial, sans-serif;
+}

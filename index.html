@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="Favicon/favicon-96x96.png"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="ParentAlgBut">
+        <a class="active" id="BubbleSort" onclick="algButton('BubbleSort')">
+          Bubble Sort
+        </a>
+        <a id="SelectionSort" onclick="algButton('SelectionSort')">
+          Selection Sort
+        </a>
+        <a id="QuickSort" onclick="algButton('QuickSort')"> Quick Sort </a>
+        <a id="MergeSort" onclick="algButton('MergeSort')"> Merge Sort </a>
+        <a id="HeapSort" onclick="algButton('HeapSort')"> Heap Sort </a>
+      </div>
+      <div id="Frame"></div>
+      <div style="clear: both"></div>
+      <div class="ParentTopBar">
+        <label class="TopBar">Array Size</label>
+        <input
+          type="range"
+          id="ArrayRange"
+          class="TopBar Range"
+          name="Range"
+          min="10"
+          max="100"
+          step="1"
+          value="20"
+        />
+        <label class="TopBar Bracket">[</label>
+        <input
+          type="text"
+          id="Textbox"
+          class="TopBar"
+          placeholder="Enter array"
+          onchange="readTextBox()"
+        />
+        <label class="TopBar Bracket">]</label>
+        <button id="StartButton" class="TopBar" onclick="startButton()">
+          Sort!
+        </button>
+        <label class="TopBar">Speed</label>
+        <input
+          type="range"
+          id="SpeedRange"
+          class="TopBar Range"
+          name="Speed"
+          min="0.7"
+          max="20"
+          step="0.1"
+          value="5"
+        />
+      </div>
+    </div>
+    <div id="div-bar"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
